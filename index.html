@@ -7,7 +7,11 @@
 	<title>Search Header</title>
 	<link rel="stylesheet" href="assets/demo.css">
 	<link rel="stylesheet" href="assets/header-search.css">
+    <!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<script src="assets/scripts.js"></script>
 </head>
 <body>
@@ -17,7 +21,7 @@
 			<nav>
 				<a href="javascript:showAlert()">Home</a>
 				<a href="javascript:showAlert()">About</a>
-				<a href="javascript:showAlert()" class="selected">Product</a>
+				<a href="" class="selected">Product</a>
 				<a href="javascript:showAlert()">Contact</a>
 			</nav>
 			<form method="get" action="#">
@@ -27,10 +31,9 @@
 	</header>
     <main>
         <section class="main-info">
-            
+					<h1 class="ProductList">Product List</h1>
         </section>
-        <section class="image">
-			<h1 class="ProductList">Product List</h1>
+			<section class="content">
 			<table class="product_list">
 				<tr>
 					<td>번호</td>
@@ -44,10 +47,46 @@
 					<td>2022-06-07</td>
 					<td><a href="assets/이기억.png" download="" class="download"><img src="assets/clip.png" alt="download" class="download_clip"></a></td>
 				</tr>
-			</table>
+            </table>
         </section>
-        <section class="content">
-            신제품 관련 내용
+        <section id="includedContent">
+            <link rel="stylesheet" href="assets/footer.css">
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+                <footer class="footer-distributed">
+                    <div class="footer-left">
+                        <h3>Company<span>B</span></h3>
+                        <p class="footer-links">
+                            <a href="javascript:showAlert()">Home</a>
+                            ·
+                            <a href="javascript:showAlert()">About</a>
+                            ·
+                            <a href="" class="selected" style="color: #5383d3">Product</a>
+                            ·
+                            <a href="javascript:showAlert()">Contact</a>
+                        </p>
+                        <p class="footer-company-name">CompanyB &copy; 2022</p>
+                    </div>
+                    <div class="footer-center">
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>Jeonju </span> KR(Republic of Korea)</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+82 010 12345678</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:support@companyB.com">support@companyB.com</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer-company-about">
+                            <span>About the companyB</span>
+                            Design.
+                        </p>
+                    </div>
         </section>
     </main>
 </body>
