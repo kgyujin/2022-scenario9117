@@ -157,8 +157,42 @@
 }
 
 
-.main-message{
-	font: normal 48px Cookie, Arial, Helvetica, sans-serif;
+a.download{
+	text-decoration: none;
+}
+
+
+img.download_clip{
+	display: block;
+	height: 15px;
+	width: 15px;
+	margin: 0 auto;
+	
+}
+
+
+table.product_list{
+	display: block;
+	width: fit-content;
+	margin: 0 auto 0 0;
 	text-align: center;
-	line-height: 40px;
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+}
+
+
+td.product_num{
+	text-align: left;
+}
+
+
+th, td{
+	border-bottom: 1px solid #444444;
+    border-left: 1px solid #444444;
+    padding: 8px;
+}
+
+
+th:first-child, td:first-child {
+	border-left: none;
 }
